@@ -3,6 +3,7 @@ import PersonalInfo from "./PersonalInfo";
 
 class Main extends Component {
   state = {
+    step: 1,
     // Step 1
     firstName: "",
     lastName: "",
@@ -16,7 +17,7 @@ class Main extends Component {
   showStep = () => {
     const { step } = this.state;
     if (step === 1) {
-      <PersonalInfo />;
+      return <PersonalInfo />;
     }
   };
 
