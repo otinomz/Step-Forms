@@ -14,11 +14,25 @@ class Main extends Component {
     jobLocation: ""
   };
 
+  nextStep = () => {
+    const { step } = this.state;
+
+    this.setState({
+      step: step + 1
+    });
+  };
+
+  prevStep = () => {
+    const { step } = this.state;
+
+    this.setState({
+      step: step - 1
+    });
+  };
+
   showStep = () => {
     const { step } = this.state;
-    if (step === 1) {
-      return <PersonalInfo />;
-    }
+    if (step === 1) return <PersonalInfo />;
   };
 
   render() {
