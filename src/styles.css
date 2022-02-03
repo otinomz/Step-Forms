@@ -7,7 +7,7 @@
 .App {
   background-color: #eaeaea;
   width: 100%;
-  display: flex;
+  display: table;
 }
 
 .App > .Content {
@@ -40,4 +40,34 @@
 }
 
 .Next:disabled {
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+label {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="text"] {
+  margin: 0 0 10px;
+  color: #555;
+  background: #ccc;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+  font-size: 14px;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  outline: none;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-weight: 400;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  height: 32px;
+  line-height: 1.3;
 }
