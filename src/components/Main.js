@@ -49,7 +49,7 @@ class Main extends Component {
     return (
       <>
         <h2> Step {step} of 3.</h2>
-        <main>{this.showStep()}</main>
+        {this.showStep()}
       </>
     );
   }
