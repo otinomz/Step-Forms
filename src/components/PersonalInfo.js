@@ -22,6 +22,9 @@ class PersonalInfo extends Component {
             onChange={handleChange("lastName")}
           />
         </label>
+        <button className="Next" onClick={this.continue}>
+          Next
+        </button>
       </>
     );
   }
