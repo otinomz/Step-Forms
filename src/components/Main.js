@@ -39,7 +39,10 @@ class Main extends Component {
     if (step === 1)
       return (
         <>
-          <PersonalInfo handleChange={this.handleChange} />
+          <PersonalInfo
+            handleChange={this.handleChange}
+            nextStep={this.nextStep}
+          />
         </>
       );
   };
