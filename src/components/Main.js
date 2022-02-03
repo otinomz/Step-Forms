@@ -30,6 +30,10 @@ class Main extends Component {
     });
   };
 
+  handleChange = (input) => (e) => {
+    this.setState({ [input]: e.target.value });
+  };
+
   showStep = () => {
     const { step } = this.state;
     if (step === 1) return <PersonalInfo />;
