@@ -36,7 +36,12 @@ class Main extends Component {
 
   showStep = () => {
     const { step } = this.state;
-    if (step === 1) return <PersonalInfo />;
+    if (step === 1)
+      return (
+        <>
+          <PersonalInfo handleChange={this.handleChange} />
+        </>
+      );
   };
 
   render() {
@@ -44,7 +49,7 @@ class Main extends Component {
     return (
       <>
         <h2> Step {step} of 3.</h2>
-        {this.showStep}
+        <main>{this.showStep()}</main>
       </>
     );
   }

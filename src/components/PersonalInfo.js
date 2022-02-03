@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 class PersonalInfo extends Component {
   render() {
+    const { handleChange } = this.props;
     return (
       <>
         <h2>Enter your personal information</h2>
