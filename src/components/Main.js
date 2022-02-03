@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PersonalInfo from "./PersonalInfo";
 
 class Main extends Component {
   state = {
@@ -13,7 +14,11 @@ class Main extends Component {
   };
 
   render() {
-    return <>Main guy</>;
+    return (
+      <>
+        <PersonalInfo />
+      </>
+    );
   }
 }
 
