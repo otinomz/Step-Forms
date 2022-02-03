@@ -14,6 +14,14 @@ class PersonalInfo extends Component {
             onChange={handleChange("firstName")}
           />
         </label>
+        <label>
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            onChange={handleChange("lastName")}
+          />
+        </label>
       </>
     );
   }
