@@ -40,6 +40,22 @@
 }
 
 .Next:disabled {
+  cursor: not-allowed;
+  background: #7aa07c;
+}
+
+.Back {
+  background: #c77f27;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.Back:hover {
+  background: #9e631b;
 }
 
 p {
