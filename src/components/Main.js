@@ -13,10 +13,19 @@ class Main extends Component {
     jobLocation: ""
   };
 
+  showStep = () => {
+    const { step } = this.state;
+    if (step === 1) {
+      <PersonalInfo />;
+    }
+  };
+
   render() {
+    const { step } = this.state;
     return (
       <>
-        <PersonalInfo />
+        <h2> Step {step} of 3.</h2>
+        {this.showStep}
       </>
     );
   }
